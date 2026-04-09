@@ -17,6 +17,16 @@
 
   /* HERO */
   .hero{position:relative;height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden}
+    .hero{
+      position:relative;
+      height:100vh;
+      display:flex;
+      align-items:flex-start;
+      justify-content:center;
+      text-align:center;
+      overflow:hidden;
+      padding-top:4.5rem;
+    }
     .hero-img{position:absolute;inset:0;background:url('fondo_concon_horizontal.jpg') center/cover no-repeat;filter:brightness(0.85)}
   
     @media (max-width: 700px) {
@@ -24,7 +34,17 @@
         background-image: url('fondo_concon_vertical.jpg');
       }
     }
-  .hero-content{position:relative;z-index:2;color:#faf6f0;padding:2rem}
+  .hero-content{
+    position:relative;
+    z-index:2;
+    color:#faf6f0;
+    padding:2rem;
+    background:rgba(15, 8, 3, 0.38);
+    border-radius:18px;
+    max-width:520px;
+      margin:15vh auto 0 auto;
+    box-shadow:0 4px 24px rgba(44,26,14,0.10);
+  }
   .hero-eyebrow{font-family:sans-serif;font-size:.8rem;letter-spacing:4px;text-transform:uppercase;color:#e8c99a;margin-bottom:1.2rem}
   .hero-title{font-size:clamp(3.5rem,8vw,7rem);letter-spacing:8px;font-style:italic;line-height:1;margin-bottom:1rem;color:#e8c99a}
   .hero-sub{font-size:1.1rem;color:#e0cdb8;max-width:480px;margin:0 auto 2rem;font-family:sans-serif;font-weight:300;line-height:1.7}
