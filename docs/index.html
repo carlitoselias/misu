@@ -17,7 +17,7 @@
 
   /* HERO */
   .hero{position:relative;height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden}
-  .hero-img{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1499678329028-101435549a4e?w=1600&q=80') center/cover no-repeat;filter:brightness(0.45)}
+  .hero-img{position:absolute;inset:0;background:url('fondo_concon.jpg') center/cover no-repeat;filter:brightness(0.35)}
   .hero-content{position:relative;z-index:2;color:#faf6f0;padding:2rem}
   .hero-eyebrow{font-family:sans-serif;font-size:.8rem;letter-spacing:4px;text-transform:uppercase;color:#e8c99a;margin-bottom:1.2rem}
   .hero-title{font-size:clamp(3.5rem,8vw,7rem);letter-spacing:8px;font-style:italic;line-height:1;margin-bottom:1rem;color:#e8c99a}
@@ -27,13 +27,7 @@
   .btn-dark{border-color:#4a2510;color:#4a2510;background:transparent}
   .btn-dark:hover{background:#4a2510;color:#faf6f0}
 
-  /* DUNAS BANNER */
-  .dunas{height:380px;position:relative;overflow:hidden}
-  .dunas-img{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&q=80') center/cover no-repeat;filter:brightness(0.7)}
-  .dunas-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(44,26,14,0.5),rgba(44,26,14,0.2))}
-  .dunas-content{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;text-align:center;color:#faf6f0;padding:2rem}
-  .dunas-content h2{font-size:clamp(1.8rem,4vw,3rem);letter-spacing:4px;font-style:italic;margin-bottom:.8rem}
-  .dunas-content p{font-family:sans-serif;font-size:1rem;color:#e0cdb8;max-width:500px;line-height:1.7}
+
 
   /* SECTION BASE */
   section{padding:5rem 2rem}
@@ -108,6 +102,8 @@
 </head>
 <body>
 
+
+
 <!-- NAV -->
 <nav>
   <div class="nav-logo">Misú</div>
@@ -132,8 +128,12 @@
 
 <!-- PRODUCTOS -->
 <section id="productos" class="products-bg">
+
   <p class="section-label">Nuestra carta</p>
   <h2 class="section-title">Tiramisús artesanales</h2>
+  <div style="width:100%;max-width:900px;margin:2rem auto 2.5rem;overflow:hidden;border-radius:12px;box-shadow:0 4px 24px rgba(44,26,14,0.08);">
+    <img src="frascos.jpg" alt="Tiramisú en frascos" style="width:100%;display:block;object-fit:cover;max-height:1024px;">
+  </div>
   <p class="section-sub">Preparados con ingredientes frescos, mascarpone importado y café de especialidad. Sin conservantes.</p>
 
   <div class="products-grid">
@@ -235,15 +235,6 @@
   </div>
 </section>
 
-<!-- DUNAS DE CONCÓN -->
-<div class="dunas">
-  <div class="dunas-img"></div>
-  <div class="dunas-overlay"></div>
-  <div class="dunas-content">
-    <h2>Hechos en Concón</h2>
-    <p>Desde las dunas hasta tu mesa. Elaboramos cada tiramisú a pasos del mar, con el cuidado artesanal que merece la mejor repostería italiana.</p>
-  </div>
-</div>
 
 <!-- EMPRESAS -->
 <section id="empresas" class="empresas-bg">
